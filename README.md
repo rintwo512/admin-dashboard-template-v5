@@ -11,4 +11,4 @@ Dark mode responsive admin dashboard template boxed layout
 
 <h1>Mobile</h1>
 
-![6](https://user-images.githubusercontent.com/59271775/108999470-4e64a200-76dd-11eb-836d-daf01b79b3de.png)
+![6](https://user-images.githubusercontent.com/59271775/108999470-4e64a200-76dd-11eb-836d-daf01b79b3de.png)   ![7](https://user-images.githubusercontent.com/59271775/108999561-6dfbca80-76dd-11eb-9555-146948dedf65.png)
