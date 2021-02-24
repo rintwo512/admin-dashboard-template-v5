@@ -1,0 +1,1138 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>DC - Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>        
+      
+        <link href="assets/css/bootstrap-dark.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+                
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />        
+             
+                
+    </head>
+
+    <body data-layout="horizontal" data-topbar="colored" data-layout-size="boxed">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                           <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo2.png" alt="" height="50">
+                                </span>
+                                <span class="logo-lg ">                                   
+                                    <h2 class="mt-5 dc"><span class="title_run" data-period="1000" data-type='["Daeng Coding"]'></span></h2>
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                        
+                    </div>
+                        
+
+
+                    <div class="d-flex mt-5">
+
+                        <div class="dropdown d-inline-block d-lg-none ml-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil-search"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                    
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                        
+
+                        
+                        <div class="dropdown d-none d-lg-inline-block ml-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                                <i class="uil-minus-path"></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil-bell"></i>
+                                <span class="badge badge-danger badge-pill">9+</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="m-0 font-size-16"> Notifications </h5>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> Mark all as read</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs mr-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="uil-facebook-messenger"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum, dolor sit amet.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="assets/images/avatar3.png"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Avatar 1</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs mr-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="uil-skype"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Lorem ipsum, dolor sit amet.</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 6 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="assets/images/avatar1.png"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Avatar 2</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum dolor sit, amet.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
+                                        <i class="uil-arrow-circle-right mr-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/avatar1.png"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ml-1 font-weight-medium font-size-15">Your Name</span>
+                                <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="uil uil-user-circle font-size-18 align-middle text-muted mr-1"></i> <span class="align-middle">User Profile</span></a>                               
+                                <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="topnav">
+
+                        <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+    
+                            <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                <ul class="navbar-nav">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">
+                                            <i class="uil-home-alt mr-2"></i> Dashboard
+                                        </a>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-uielement" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-flask mr-2"></i>UI Elements <div class="arrow-down"></div>
+                                        </a>
+
+                                        <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl"
+                                            aria-labelledby="topnav-uielement">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <a href="pages/ui/alerts.html" class="dropdown-item">Alerts</a>
+                                                        <a href="pages/ui/buttons.html" class="dropdown-item">Buttons</a>
+                                                        <a href="pages/ui/cards.html" class="dropdown-item">Cards</a>
+                                                        <a href="pages/ui/carousel.html" class="dropdown-item">Carousel</a>
+                                                        <a href="pages/ui/dropdowns.html" class="dropdown-item">Dropdowns</a>
+                                                         <a href="pages/ui/video.html" class="dropdown-item">Video</a> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <a href="pages/ui/lightbox.html" class="dropdown-item">Lightbox</a>
+                                                        <a href="pages/ui/modals.html" class="dropdown-item">Modals</a>
+                                                        <a href="pages/ui/rangeslider.html" class="dropdown-item">Range Slider</a>   
+                                                        <a href="pages/ui/progressbars.html" class="dropdown-item">Progress Bars</a>
+                                                        <a href="pages/ui/sweet-alert.html" class="dropdown-item">Sweet-Alert</a>
+                                                        <a href="pages/ui/tabs-accordions.html" class="dropdown-item">Tabs & Accordions</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <a href="pages/ui/general.html" class="dropdown-item">General</a>    
+                                                        <a href="pages/ui/rating.html" class="dropdown-item">Rating</a>
+                                                        <a href="pages/ui/notifications.html" class="dropdown-item">Notifications</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-apps mr-2"></i>Apps <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-pages">
+
+                                            <a href="pages/app/calendar.html" class="dropdown-item">Calendar</a>
+                                            <a href="pages/app/chat.html" class="dropdown-item">Chat</a>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-email"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Email <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-email">
+                                                    <a href="pages/app/email-inbox.html" class="dropdown-item">Inbox</a>
+                                                    <a href="pages/app/email-read.html" class="dropdown-item">Read Email</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-ecommerce"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Ecommerce <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-ecommerce">
+                                                    <a href="pages/app/ecommerce-products.html" class="dropdown-item">Products</a>
+                                                    <a href="pages/app/ecommerce-product-detail.html" class="dropdown-item">Product Detail</a>
+                                                    <a href="pages/app/ecommerce-orders.html" class="dropdown-item">Orders</a>
+                                                    <a href="pages/app/ecommerce-customers.html" class="dropdown-item">Customers</a>
+                                                    <a href="pages/app/ecommerce-cart.html" class="dropdown-item">Cart</a>
+                                                    <a href="pages/app/ecommerce-checkout.html" class="dropdown-item">Checkout</a>
+                                                    <a href="pages/app/ecommerce-shops.html" class="dropdown-item">Shops</a>
+                                                    <a href="pages/app/ecommerce-add-product.html" class="dropdown-item">Add Product</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-invoice"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Invoices <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-invoice">
+                                                    <a href="pages/app/invoices-list.html" class="dropdown-item">Invoice List</a>
+                                                    <a href="pages/app/invoices-detail.html" class="dropdown-item">Invoice Detail</a>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-contact"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Contacts <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-contact">
+                                                    <a href="pages/app/contacts-grid.html" class="dropdown-item">User Grid</a>
+                                                    <a href="pages/app/contacts-list.html" class="dropdown-item">User List</a>
+                                                    <a href="pages/app/contacts-profile.html" class="dropdown-item">Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-layers mr-2"></i>Components <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-components">
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-form"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Forms <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-form">
+                                                    <a href="pages/component/form-elements.html" class="dropdown-item">Basic Elements</a>
+                                                    <a href="pages/component/form-validation.html" class="dropdown-item">Validation</a>
+                                                    <a href="pages/component/form-advanced.html" class="dropdown-item">Advanced Plugins</a>
+                                                    <a href="pages/component/form-editors.html" class="dropdown-item">Editors</a>
+                                                    <a href="pages/component/form-uploads.html" class="dropdown-item">File Upload</a>
+                                                    <a href="pages/component/form-xeditable.html" class="dropdown-item">Xeditable</a>
+                                                    <a href="pages/component/form-repeater.html" class="dropdown-item">Repeater</a>
+                                                    <a href="pages/component/form-wizard.html" class="dropdown-item">Wizard</a>
+                                                    <a href="pages/component/form-mask.html" class="dropdown-item">Mask</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-table"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Tables <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-table">
+                                                    <a href="pages/component/tables-basic.html" class="dropdown-item">Bootstrap Basic</a>
+                                                    <a href="pages/component/tables-datatable.html" class="dropdown-item">Datatables</a>
+                                                    <a href="pages/component/tables-responsive.html" class="dropdown-item">Responsive</a>
+                                                    <a href="pages/component/tables-editable.html" class="dropdown-item">Editable</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-charts"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Charts <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-charts">
+                                                    <a href="pages/component/charts-apex.html" class="dropdown-item">Apex</a>
+                                                    <a href="pages/component/charts-chartjs.html" class="dropdown-item">Chartjs</a>
+                                                    <a href="pages/component/charts-flot.html" class="dropdown-item">Flot</a>
+                                                    <a href="pages/component/charts-knob.html" class="dropdown-item">Jquery Knob</a>                                           
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Icons <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-icons">
+                                                    <a href="pages/component/icons-materialdesign.html" class="dropdown-item">Material Design</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-map"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Maps <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-map">
+                                                    <a href="pages/component/maps-google.html" class="dropdown-item">Google</a>
+                                                    <a href="pages/component/maps-vector.html" class="dropdown-item">Vector</a>
+                                                    <a href="pages/component/maps-leaflet.html" class="dropdown-item">Leaflet</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-copy mr-2"></i>Extra pages <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Authentication <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-auth">
+                                                    <a href="pages/example/login.html" class="dropdown-item">Login</a>
+                                                    <a href="pages/example/register.html" class="dropdown-item">Register</a>
+                                                    <a href="pages/example/recoverpw.html" class="dropdown-item">Recover Password</a>
+                                                    <a href="pages/example/lock-screen.html" class="dropdown-item">Lock Screen</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Utility <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-utility">
+                                                    <a href="pages/example/starter.html" class="dropdown-item">Starter Page</a>
+                                                    <a href="pages/example/maintenance.html" class="dropdown-item">Maintenance</a>                                    
+                                                    <a href="pages/example/timeline.html" class="dropdown-item">Timeline</a>                                       
+                                                    <a href="pages/example/pricing.html" class="dropdown-item">Pricing</a>
+                                                    <a href="pages/example/404.html" class="dropdown-item">Error 404</a>
+                                                    <a href="pages/example/500.html" class="dropdown-item">Error 500</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   
+                                    <li class="" style="">
+                                        <a class="nav-link" href="pages/example/login.html">
+                                            <i class="uil-corner-up-right-alt mr-2"></i> Sign out
+                                        </a>
+                                    </li>
+
+                                    <li id="time" class="mt-3 text-muted clock" style="margin-left:250px !important;font-size: 15px;"></li>
+                                                                
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content-here -->
+            
+            <div class="main-content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0">Dashboard</h4>                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right mt-2">
+                                            <div id="total-revenue-chart"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-1 mt-1">$<span data-plugin="counterup">99</span></h4>
+                                            <p class="text-muted mb-0">Total Revenue</p>
+                                        </div>
+                                        <p class="text-muted mt-3 mb-0"><span class="text-success mr-1"><i class="mdi mdi-arrow-up-bold ml-1"></i>2.65%</span> since last week
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- end col-->
+
+                             <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right mt-2">
+                                            <div id="orders-chart"> </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">99</span></h4>
+                                            <p class="text-muted mb-0">Orders</p>
+                                        </div>
+                                        <p class="text-muted mt-3 mb-0"><span class="text-danger mr-1"><i class="mdi mdi-arrow-down-bold ml-1"></i>0.82%</span> since last week
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- end col-->
+
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right mt-2">
+                                            <div id="customers-chart"> </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">99</span></h4>
+                                            <p class="text-muted mb-0">Customers</p>
+                                        </div>
+                                        <p class="text-muted mt-3 mb-0"><span class="text-danger mr-1"><i class="mdi mdi-arrow-down-bold ml-1"></i>6.24%</span> since last week
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- end col-->
+
+                            <div class="col-md-6 col-xl-3">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right mt-2">
+                                            <div id="growth-chart"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-1 mt-1">+ <span data-plugin="counterup">99</span>%</h4>
+                                            <p class="text-muted mb-0">Growth</p>
+                                        </div>
+                                        <p class="text-muted mt-3 mb-0"><span class="text-success mr-1"><i class="mdi mdi-arrow-up-bold ml-1"></i>10.51%</span> since last week
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- end col-->
+                        </div> <!-- end row-->
+
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton5"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <span class="font-weight-semibold">Sort By:</span> <span class="text-muted">Yearly<i class="mdi mdi-chevron-down ml-1"></i></span>
+                                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                                    <a class="dropdown-item" href="#">Monthly</a>
+                                                    <a class="dropdown-item" href="#">Yearly</a>
+                                                    <a class="dropdown-item" href="#">Weekly</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title mb-4">Sales Analytics</h4>
+
+                                        <div class="mt-1">
+                                            <ul class="list-inline main-chart mb-0">
+                                                <li class="list-inline-item chart-border-left mr-0 border-0">
+                                                    <h3 class="text-primary">$<span data-plugin="counterup">99</span><span class="text-muted d-inline-block font-size-15 ml-3">Income</span></h3>
+                                                </li>
+                                                <li class="list-inline-item chart-border-left mr-0">
+                                                    <h3><span data-plugin="counterup">100</span><span class="text-muted d-inline-block font-size-15 ml-3">Sales</span>
+                                                    </h3>
+                                                </li>
+                                                <li class="list-inline-item chart-border-left mr-0">
+                                                    <h3><span data-plugin="counterup">99</span>%<span class="text-muted d-inline-block font-size-15 ml-3">Conversation Ratio</span></h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <div id="sales-analytics-chart" class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                            <div class="col-xl-4">
+                                <div class="card bg-danger">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-8">
+                                                <p class="text-white font-size-18">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></p>
+                                                <div class="mt-4">
+                                                    <a href="javascript: void(0);" class="btn btn-success waves-effect waves-light">Upgrade Account!</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mt-4 mt-sm-0">
+                                                    <img src="assets/images/analytics.svg" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton1"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <span class="font-weight-semibold">Sort By:</span> <span class="text-muted">Yearly<i class="mdi mdi-chevron-down ml-1"></i></span>
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                                    <a class="dropdown-item" href="#">Monthly</a>
+                                                    <a class="dropdown-item" href="#">Yearly</a>
+                                                    <a class="dropdown-item" href="#">Weekly</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="card-title mb-4">Top programming language</h4>
+
+
+                                        <div class="row align-items-center no-gutters mt-3">
+                                            <div class="col-sm-3">
+                                                <p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-primary mr-2"></i> Javascript </p>
+                                            </div>
+
+                                            <div class="col-sm-9">
+                                                <div class="progress mt-1" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar bg-primary" role="progressbar"
+                                                        style="width: 70%" aria-valuenow="52" aria-valuemin="0"
+                                                        aria-valuemax="52">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+
+                                        <div class="row align-items-center no-gutters mt-3">
+                                            <div class="col-sm-3">
+                                                <p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-info mr-2"></i> PHP </p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="progress mt-1" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar bg-info" role="progressbar"
+                                                        style="width: 60%" aria-valuenow="45" aria-valuemin="0"
+                                                        aria-valuemax="45">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+
+                                        <div class="row align-items-center no-gutters mt-3">
+                                            <div class="col-sm-3">
+                                                <p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-success mr-2"></i> Python </p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="progress mt-1" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar bg-success" role="progressbar"
+                                                        style="width: 50%" aria-valuenow="48" aria-valuemin="0"
+                                                        aria-valuemax="48">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+
+                                        <div class="row align-items-center no-gutters mt-3">
+                                            <div class="col-sm-3">
+                                                <p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-warning mr-2"></i> C++ </p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="progress mt-1" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar bg-warning" role="progressbar"
+                                                        style="width: 45%" aria-valuenow="78" aria-valuemin="0"
+                                                        aria-valuemax="78">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+
+                                        <div class="row align-items-center no-gutters mt-3">
+                                            <div class="col-sm-3">
+                                                <p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-purple mr-2"></i> Pascal </p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="progress mt-1" style="height: 6px;">
+                                                    <div class="progress-bar progress-bar bg-purple" role="progressbar"
+                                                        style="width: 30%" aria-valuenow="63" aria-valuemin="0"
+                                                        aria-valuemax="63">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end row-->
+
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end Col -->
+                        </div> <!-- end row-->
+
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right">
+                                            <div class="dropdown">
+                                                <a class=" dropdown-toggle" href="#" id="dropdownMenuButton2"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="text-muted">All Members<i class="mdi mdi-chevron-down ml-1"></i></span>
+                                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                    <a class="dropdown-item" href="#">Locations</a>
+                                                    <a class="dropdown-item" href="#">Revenue</a>
+                                                    <a class="dropdown-item" href="#">Join Date</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title mb-4">Top Users</h4>
+
+                                        <div data-simplebar style="max-height: 336px;">
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless table-centered table-nowrap">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width: 20px;"><img src="assets/images/avatar2.png" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 1</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-danger font-size-12">Cancel</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-success" data-feather="trending-up"></i>$2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/avatar3.png" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 2</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-success font-size-12">Success</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-danger" data-feather="trending-down"></i>$2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/avatar4.png" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 3</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-info font-size-12">Active</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-success" data-feather="trending-up"></i>$2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/avatar4.png" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 4</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning font-size-12">Pending</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-danger" data-feather="trending-down"></i>$2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/avatar5.png" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 5</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-info font-size-12">Active</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-success" data-feather="trending-up"></i>$2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/avatar6.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 6</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-success font-size-12">Success</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-danger" data-feather="trending-down"></i>$2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/avatar1.png" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 font-weight-normal">Avatar 7</h6>
+                                                                <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Makassar</p>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-danger font-size-12">Cancel</span></td>
+                                                            <td class="text-muted font-weight-semibold text-right"><i class="icon-xs icon mr-2 text-success" data-feather="trending-up"></i>$2</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div> <!-- enbd table-responsive-->
+                                        </div> <!-- data-sidebar-->
+                                    </div><!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div><!-- end col -->
+
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="float-right">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="dropdownMenuButton3"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="text-muted">Recent<i class="mdi mdi-chevron-down ml-1"></i></span>
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton3">
+                                                    <a class="dropdown-item" href="#">Recent</a>
+                                                    <a class="dropdown-item" href="#">By Users</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="card-title mb-4">Recent Activity</h4>
+
+                                        <ol class="activity-feed mb-0 pl-2" data-simplebar style="max-height: 336px;">
+                                            <li class="feed-item">
+                                                <div class="feed-item-list">
+                                                    <p class="text-muted mb-1 font-size-13">Today<small class="d-inline-block ml-1">19:00 pm</small></p>
+                                                    <p class="mt-0 mb-0">Lorem ipsum dolor sit amet, consectetur, adipisicing:<span class="text-primary">Telpro</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="feed-item">
+                                                <p class="text-muted mb-1 font-size-13">01 Jan, 2021 <small class="d-inline-block ml-1">21:00 pm</small></p>
+                                                <p class="mt-0 mb-0">Lorem ipsum dolor sit amet: <span
+                                                        class="text-primary">Daeng Coding</span></p>
+                                            </li>
+                                            <li class="feed-item">
+                                                <p class="text-muted mb-1 font-size-13">01 Jan, 2021 <small class="d-inline-block ml-1">18:00 pm</small></p>
+                                                <p class="mt-0 mb-0">Lorem ipsum dolor sit amet, consectetur, adipisicing.<span class="text-primary"> Webteck</span></p>
+                                            </li>
+                                            <li class="feed-item">
+                                                <p class="text-muted mb-1 font-size-13">01 Jan, 2021 <small class="d-inline-block ml-1">08:42 pm</small></p>
+                                                <p class="mt-0 mb-0">Lorem, ipsum dolor sit amet. <span
+                                                        class="text-primary">Telpro</span></p>
+                                            </li>
+
+                                            <li class="feed-item">
+                                                <p class="text-muted mb-1 font-size-13">01 Jan, 2021 <small class="d-inline-block ml-1">16:00 am</small></p>
+                                                <p class="mt-0 mb-0">Lorem ipsum dolor sit, amet consectetur, adipisicing.<span class="text-primary"> Daeng Coding</span></p>
+                                            </li>
+                                            <li class="feed-item pb-1">
+                                                <p class="text-muted mb-1 font-size-13">01 Jan, 2021 <small class="d-inline-block ml-1">22:00 pm</small></p>
+                                                <p class="mt-0 mb-0">Lorem ipsum dolor sit amet, consectetur<span class="text-primary"> Webteck</span></p>
+                                            </li>
+
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <div class="float-right">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="dropdownMenuButton4"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="text-muted">Monthly<i class="mdi mdi-chevron-down ml-1"></i></span>
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton4">
+                                                    <a class="dropdown-item" href="#">Yearly</a>
+                                                    <a class="dropdown-item" href="#">Monthly</a>
+                                                    <a class="dropdown-item" href="#">Weekly</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="card-title">Social Source</h4>
+
+                                        <div class="text-center">
+                                            <div class="avatar-sm mx-auto mb-4">
+                                                <span class="avatar-title rounded-circle bg-soft-primary font-size-24">
+                                                        <i class="mdi mdi-facebook text-primary"></i>
+                                                    </span>
+                                            </div>
+                                            <p class="font-16 text-muted mb-2"></p>
+                                            <h5><a href="#" class="text-dark">Facebook - <span class="text-muted font-16">99 sales</span> </a></h5>
+                                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reiciendis natus vitae.</p>
+                                            <a href="#" class="text-reset font-16">Learn more <i class="mdi mdi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-4">
+                                                <div class="social-source text-center mt-3">
+                                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle bg-primary font-size-16">
+                                                                <i class="mdi mdi-facebook text-white"></i>
+                                                            </span>
+                                                    </div>
+                                                    <h5 class="font-size-15">Facebook</h5>
+                                                    <p class="text-muted mb-0">99 sales</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="social-source text-center mt-3">
+                                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle bg-info font-size-16">
+                                                                <i class="mdi mdi-twitter text-white"></i>
+                                                            </span>
+                                                    </div>
+                                                    <h5 class="font-size-15">Twitter</h5>
+                                                    <p class="text-muted mb-0">88 sales</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="social-source text-center mt-3">
+                                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle bg-pink font-size-16">
+                                                                <i class="mdi mdi-instagram text-white"></i>
+                                                            </span>
+                                                    </div>
+                                                    <h5 class="font-size-15">Instagram</h5>
+                                                    <p class="text-muted mb-0">77 sales</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-3 text-center">
+                                            <a href="#" class="text-primary font-size-14 font-weight-medium">View All Sources <i class="mdi mdi-chevron-right"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">Latest Transaction</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-centered table-nowrap mb-0">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th style="width: 20px;">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                <label class="custom-control-label" for="customCheck1">&nbsp;</label>
+                                                            </div>
+                                                        </th>
+                                                        <th>Order ID</th>
+                                                        <th>Billing Name</th>
+                                                        <th>Date</th>
+                                                        <th>Total</th>
+                                                        <th>Payment Status</th>
+                                                        <th>Payment Method</th>
+                                                        <th>View Details</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                                <label class="custom-control-label" for="customCheck2">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="javascript: void(0);" class="text-body font-weight-bold">#AA123</a> </td>
+                                                        <td>Avatar 1</td>
+                                                        <td>
+                                                            07 Jan, 2021
+                                                        </td>
+                                                        <td>
+                                                            $4
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fab fa-cc-mastercard mr-1"></i> Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                                <label class="custom-control-label" for="customCheck3">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="javascript: void(0);" class="text-body font-weight-bold">#BB123</a> </td>
+                                                        <td>Avatar 2</td>
+                                                        <td>
+                                                            07 Jan, 2021
+                                                        </td>
+                                                        <td>
+                                                            $3
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-soft-danger font-size-12">Chargeback</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fab fa-cc-visa mr-1"></i> Visa
+                                                        </td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                                <label class="custom-control-label" for="customCheck4">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="javascript: void(0);" class="text-body font-weight-bold">#CC123</a> </td>
+                                                        <td>Avatar 3</td>
+                                                        <td>
+                                                            06 Jan, 2021
+                                                        </td>
+                                                        <td>
+                                                            $3
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fab fa-cc-paypal mr-1"></i> Paypal
+                                                        </td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                                <label class="custom-control-label" for="customCheck5">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="javascript: void(0);" class="text-body font-weight-bold">#DD123</a> </td>
+                                                        <td>Avatar 4</td>
+                                                        <td>
+                                                            05 Jan, 2021
+                                                        </td>
+                                                        <td>
+                                                            $4
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fab fa-cc-mastercard mr-1"></i> Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                                <label class="custom-control-label" for="customCheck6">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="javascript: void(0);" class="text-body font-weight-bold">#EE123</a> </td>
+                                                        <td>Avatar 5</td>
+                                                        <td>
+                                                            04 Jan, 2021
+                                                        </td>
+                                                        <td>
+                                                            $4
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-soft-warning font-size-12">Refund</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fab fa-cc-visa mr-1"></i> Visa
+                                                        </td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                                                <label class="custom-control-label" for="customCheck7">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="javascript: void(0);" class="text-body font-weight-bold">#FF123</a> </td>
+                                                        <td>Avatar 6</td>
+                                                        <td>
+                                                            04 Jan, 2021
+                                                        </td>
+                                                        <td>
+                                                            $3
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-pill badge-soft-success font-size-12">Paid</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fab fa-cc-paypal mr-1"></i> Paypal
+                                                        </td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                                View Details
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end table-responsive -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © daengcoding.id
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-right d-none d-sm-block">
+                                    Makassar <i class="fa fa-heart text-danger animat ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->        
+                    
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>        
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/js/pages/dashboard.init.js"></script> 
+        <script src="assets/js/app.js"></script>  
+        <script src="assets/js/print-text.js"></script>  
+        
+
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>DC - Starter template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>        
+      
+        <link href="../../assets/css/bootstrap-dark.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+                
+        <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="../../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />        
+                
+    </head>
+
+    <body data-layout="horizontal" data-topbar="colored" data-layout-size="boxed" class="starter">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                           <a href="../../index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="../../assets/images/logo2.png" alt="" height="50">
+                                </span>
+                                <span class="logo-lg">
+                                    <h2 class="mt-5 dc"><span class="title_run" data-period="1000" data-type='["Daeng Coding"]'></span></h2>
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                        
+                    </div>
+
+                    <div class="d-flex mt-5">
+
+                        <div class="dropdown d-inline-block d-lg-none ml-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil-search"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                    
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                        
+
+                        
+                        <div class="dropdown d-none d-lg-inline-block ml-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                                <i class="uil-minus-path"></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="uil-bell"></i>
+                                <span class="badge badge-danger badge-pill">9+</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="m-0 font-size-16"> Notifications </h5>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> Mark all as read</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs mr-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="uil-facebook-messenger"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum, dolor sit amet.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="../../assets/images/avatar3.png"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Avatar 1</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs mr-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="uil-skype"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Lorem ipsum, dolor sit amet.</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 6 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="../../assets/images/avatar1.png"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Avatar 2</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">Lorem ipsum dolor sit, amet.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
+                                        <i class="uil-arrow-circle-right mr-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="../../assets/images/avatar1.png"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ml-1 font-weight-medium font-size-15">Your Name</span>
+                                <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="uil uil-user-circle font-size-18 align-middle text-muted mr-1"></i> <span class="align-middle">User Profile</span></a>                               
+                                <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="topnav">
+
+                        <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+    
+                            <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                <ul class="navbar-nav">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../index.html">
+                                            <i class="uil-home-alt mr-2"></i> Dashboard
+                                        </a>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-uielement" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-flask mr-2"></i>UI Elements <div class="arrow-down"></div>
+                                        </a>
+
+                                        <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl"
+                                            aria-labelledby="topnav-uielement">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <a href="../../pages/ui/alerts.html" class="dropdown-item">Alerts</a>
+                                                        <a href="../../pages/ui/buttons.html" class="dropdown-item">Buttons</a>
+                                                        <a href="../../pages/ui/cards.html" class="dropdown-item">Cards</a>
+                                                        <a href="../../pages/ui/carousel.html" class="dropdown-item">Carousel</a>
+                                                        <a href="../../pages/ui/dropdowns.html" class="dropdown-item">Dropdowns</a>
+                                                         <a href="../../pages/ui/video.html" class="dropdown-item">Video</a> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <a href="../../pages/ui/lightbox.html" class="dropdown-item">Lightbox</a>
+                                                        <a href="../../pages/ui/modals.html" class="dropdown-item">Modals</a>
+                                                        <a href="../../pages/ui/rangeslider.html" class="dropdown-item">Range Slider</a>   
+                                                        <a href="../../pages/ui/progressbars.html" class="dropdown-item">Progress Bars</a>
+                                                        <a href="../../pages/ui/sweet-alert.html" class="dropdown-item">Sweet-Alert</a>
+                                                        <a href="../../pages/ui/tabs-accordions.html" class="dropdown-item">Tabs & Accordions</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div>
+                                                        <a href="../../pages/ui/general.html" class="dropdown-item">General</a>    
+                                                        <a href="../../pages/ui/rating.html" class="dropdown-item">Rating</a>
+                                                        <a href="../../pages/ui/notifications.html" class="dropdown-item">Notifications</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-apps mr-2"></i>Apps <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-pages">
+
+                                            <a href="../../pages/app/calendar.html" class="dropdown-item">Calendar</a>
+                                            <a href="../../pages/app/chat.html" class="dropdown-item">Chat</a>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-email"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Email <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-email">
+                                                    <a href="../../pages/app/email-inbox.html" class="dropdown-item">Inbox</a>
+                                                    <a href="../../pages/app/email-read.html" class="dropdown-item">Read Email</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-ecommerce"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Ecommerce <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-ecommerce">
+                                                    <a href="../../pages/app/ecommerce-products.html" class="dropdown-item">Products</a>
+                                                    <a href="../../pages/app/ecommerce-product-detail.html" class="dropdown-item">Product Detail</a>
+                                                    <a href="../../pages/app/ecommerce-orders.html" class="dropdown-item">Orders</a>
+                                                    <a href="../../pages/app/ecommerce-customers.html" class="dropdown-item">Customers</a>
+                                                    <a href="../../pages/app/ecommerce-cart.html" class="dropdown-item">Cart</a>
+                                                    <a href="../../pages/app/ecommerce-checkout.html" class="dropdown-item">Checkout</a>
+                                                    <a href="../../pages/app/ecommerce-shops.html" class="dropdown-item">Shops</a>
+                                                    <a href="../../pages/app/ecommerce-add-product.html" class="dropdown-item">Add Product</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-invoice"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Invoices <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-invoice">
+                                                    <a href="../../pages/app/invoices-list.html" class="dropdown-item">Invoice List</a>
+                                                    <a href="../../pages/app/invoices-detail.html" class="dropdown-item">Invoice Detail</a>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-contact"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Contacts <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-contact">
+                                                    <a href="../../pages/app/contacts-grid.html" class="dropdown-item">User Grid</a>
+                                                    <a href="../../pages/app/contacts-list.html" class="dropdown-item">User List</a>
+                                                    <a href="../../pages/app/contacts-profile.html" class="dropdown-item">Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-layers mr-2"></i>Components <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-components">
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-form"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Forms <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-form">
+                                                    <a href="../../pages/component/form-elements.html" class="dropdown-item">Basic Elements</a>
+                                                    <a href="../../pages/component/form-validation.html" class="dropdown-item">Validation</a>
+                                                    <a href="../../pages/component/form-advanced.html" class="dropdown-item">Advanced Plugins</a>
+                                                    <a href="../../pages/component/form-editors.html" class="dropdown-item">Editors</a>
+                                                    <a href="../../pages/component/form-uploads.html" class="dropdown-item">File Upload</a>
+                                                    <a href="../../pages/component/form-xeditable.html" class="dropdown-item">Xeditable</a>
+                                                    <a href="../../pages/component/form-repeater.html" class="dropdown-item">Repeater</a>
+                                                    <a href="../../pages/component/form-wizard.html" class="dropdown-item">Wizard</a>
+                                                    <a href="../../pages/component/form-mask.html" class="dropdown-item">Mask</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-table"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Tables <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-table">
+                                                    <a href="../../pages/component/tables-basic.html" class="dropdown-item">Bootstrap Basic</a>
+                                                    <a href="../../pages/component/tables-datatable.html" class="dropdown-item">Datatables</a>
+                                                    <a href="../../pages/component/tables-responsive.html" class="dropdown-item">Responsive</a>
+                                                    <a href="../../pages/component/tables-editable.html" class="dropdown-item">Editable</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-charts"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Charts <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-charts">
+                                                    <a href="../../pages/component/charts-apex.html" class="dropdown-item">Apex</a>
+                                                    <a href="../../pages/component/charts-chartjs.html" class="dropdown-item">Chartjs</a>
+                                                    <a href="../../pages/component/charts-flot.html" class="dropdown-item">Flot</a>
+                                                    <a href="../../pages/component/charts-knob.html" class="dropdown-item">Jquery Knob</a>                                           
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Icons <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-icons">
+                                                    <a href="../../pages/component/icons-materialdesign.html" class="dropdown-item">Material Design</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-map"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Maps <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-map">
+                                                    <a href="../../pages/component/maps-google.html" class="dropdown-item">Google</a>
+                                                    <a href="../../pages/component/maps-vector.html" class="dropdown-item">Vector</a>
+                                                    <a href="../../pages/component/maps-leaflet.html" class="dropdown-item">Leaflet</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="uil-copy mr-2"></i>Extra pages <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Authentication <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-auth">
+                                                    <a href="../../pages/example/login.html" class="dropdown-item">Login</a>
+                                                    <a href="../../pages/example/register.html" class="dropdown-item">Register</a>
+                                                    <a href="../../pages/example/recoverpw.html" class="dropdown-item">Recover Password</a>
+                                                    <a href="../../pages/example/lock-screen.html" class="dropdown-item">Lock Screen</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Utility <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-utility">
+                                                    <a href="../../pages/example/starter.html" class="dropdown-item">Starter Page</a>
+                                                    <a href="../../pages/example/maintenance.html" class="dropdown-item">Maintenance</a>                                    
+                                                    <a href="../../pages/example/timeline.html" class="dropdown-item">Timeline</a>                                       
+                                                    <a href="../../pages/example/pricing.html" class="dropdown-item">Pricing</a>
+                                                    <a href="../../pages/example/404.html" class="dropdown-item">Error 404</a>
+                                                    <a href="../../pages/example/500.html" class="dropdown-item">Error 500</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   
+                                    <li class="" style="">
+                                        <a class="nav-link" href="../../pages/example/login.html">
+                                            <i class="uil-corner-up-right-alt mr-2"></i> Sign out
+                                        </a>
+                                    </li>
+                                    <li id="time" class="mt-3 text-muted clock" style="margin-left:250px !important;font-size: 15px;"></li>
+                                                                
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content-here -->
+            
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0">Starter Page</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © daengcoding.id
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-right d-none d-sm-block">
+                                    Makassar <i class="fa fa-heart text-danger animat ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->        
+         <script src="../../assets/libs/jquery/jquery.min.js"></script>
+        <script src="../../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="../../assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="../../assets/libs/node-waves/waves.min.js"></script>
+        <script src="../../assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="../../assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+
+        <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/print-text.js"></script>              
+       
+    </body>
+
+</html>
